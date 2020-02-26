@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alarme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <label for="inputHora">Hora
+      <input type="number" min="0" max="23" maxlength="2" name="inputHora" id="inputHora" value="0" required onfocus="this.value=''">
+    </label>
+    
+    <label for="inputMinuto">Minuto
+      <input type="number" min="0" max="59" maxlength="2" name="inputMinuto" id="inputMinuto" value="0" required onfocus="this.value=''"> 
+    </label>
+    
+    <label for="inputSegundo">Segundo
+      <input type="number" min="0" max="59" maxlength="2" name="inputSegundo" id="inputSegundo" value="0" required onfocus="this.value=''">
+    </label>
+
+    <label for="linkVideo">Link
+      <input id="linkVideo" value="https://www.youtube.com/watch?v=DJPS5Zn_O9A">
+    </label>
+    
+    <button onclick="iniciar()">Iniciar</button>
+    
+  </section>
+
+  <div id="contador">
+      <div id="dia" class="timer"></div>
+      <div id="hora" class="timer"></div>
+      <div id="minuto" class="timer"></div>
+      <div id="segundo" class="timer"></div>
+  </div>
+  
+  <script src="script.js"></script> 
+</body>
+</html>
